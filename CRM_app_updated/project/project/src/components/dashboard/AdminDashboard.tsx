@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, ChevronDown, LayoutDashboard, Users } from 'lucide-react'; // Replace with your icon library
 import { useNavigate } from 'react-router-dom';
 interface UserNavbarProps {
   
   handleSignOut: () => void;
 }
 
-const AdminDashboard: React.FC<UserNavbarProps> = ({ handleSignOut }) => {
-  //const [isDashboardOpen, setIsDashboardOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+const AdminDashboard: React.FC<UserNavbarProps> = ({}) => {
   const navigate = useNavigate();
   return (
     <nav className="bg-indigo-600 text-white p-4">

@@ -1,10 +1,8 @@
-import React from 'react';
 import { Link,  useNavigate } from 'react-router-dom';
 import { LogOut } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 
 export default function MainDashboard() {
-  const userRole = "Admin"; // Replace this with actual logic to determine the user's role
   const navigate = useNavigate();
 
   // Handle sign out

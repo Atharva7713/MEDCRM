@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, ChevronDown, LayoutDashboard, Users } from 'lucide-react'; // Replace with your icon library
+import { Building2,Users } from 'lucide-react'; // Replace with your icon library
 import MainDashboard from './Main_Dashboard/MainDashboard';
 
 interface UserNavbarProps {
@@ -9,7 +9,6 @@ interface UserNavbarProps {
 }
 
 const UserNavbar: React.FC<UserNavbarProps> = ({ userRole, handleSignOut }) => {
-  const [isDashboardOpen, setIsDashboardOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   return (

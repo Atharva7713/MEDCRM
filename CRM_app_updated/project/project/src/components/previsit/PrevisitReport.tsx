@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { format } from 'date-fns';
 import { supabase } from '../../lib/supabase';
-import type { PrevisitReport, Task } from '../../types/types';
+import type { PrevisitReport} from '../../types/types';
 import { useNavigate } from 'react-router-dom';
 import UserNavbar from '../UserNavbar';
 

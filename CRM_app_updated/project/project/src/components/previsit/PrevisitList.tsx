@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
-import { FileText, Search, Calendar } from 'lucide-react';
+import { Search, Calendar } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import UserNavbar from '../UserNavbar';
 import type { PrevisitReport } from '../../types';
